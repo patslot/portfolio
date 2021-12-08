@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "title": "CNY editorial campaign",
+        "category": "gallery-item-visible angular",
+        "link": "/works-inside/1",
+        "imgLink": "assets/img/cny2021.jpg",
+        "button": "Look inside"
+    },
+    {
+        "id": "2",
+        "title": "Blue insurance - CNY campaign",
+        "category": "gallery-item-visible angular python",
+        "link": "/works-inside/2",
+        "imgLink": "assets/img/blue_cny.jpg",
+        "button": "Look inside"
+    },
+    {
+        "id": "3",
+        "title": "Cigna servey campaign",
+        "category": "gallery-item-visible angular python",
+        "link": "/works-inside/3",
+        "imgLink": "assets/img/cigna2020.jpg",
+        "button": "Look inside"
+    },
+    {
+        "id": "4",
+        "title": "Best mall award campaign",
+        "category": "gallery-item-visible angular python",
+        "link": "/works-inside/4",
+        "imgLink": "assets/img/bestmall2018.jpg",
+        "button": "Look inside"
+    },
+    {
+        "id": "5",
+        "title": "Takeout campaign",
+        "category": "gallery-item-visible gatsby",
+        "link": "/works-inside/5",
+        "imgLink": "assets/img/eatgoodsite.jpg",
+        "button": "Look inside"
+    },
+    {
+        "id": "6",
+        "title": "Keewah mini-game",
+        "category": "gallery-item-visible angular",
+        "link": "/works-inside/6",
+        "imgLink": "assets/img/keewah.jpg",
+        "button": "Look inside"
+    },
+    {
+        "id": "7",
+        "title": "Chow Sang Sang mini-game",
+        "category": "gallery-item-visible angular",
+        "link": "/works-inside/7",
+        "imgLink": "assets/img/chowsangsang.jpg",
+        "button": "Look inside"
+    },
+    {
+        "id": "8",
+        "title": "Sunlife ",
+        "category": "gallery-item-visible angular",
+        "link": "/works-inside/8",
+        "imgLink": "assets/img/sunlife.jpg",
+        "button": "Look inside"
+    },
+    {
+        "id": "9",
+        "title": "Sales Roadshow",
+        "category": "gallery-item-visible gatsby",
+        "link": "/works-inside/9",
+        "imgLink": "assets/img/roadshow.jpg",
+        "button": "Look inside"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "title": "All",
+        "filter": "*"
+    },
+    {
+        "id": "2",
+        "title": "Angular JS",
+        "filter": "angular"
+    },
+    {
+        "id": "3",
+        "title": "Gatsby JS",
+        "filter": "gatsby"
+    },
+    {
+        "id": "5",
+        "title": "Python",
+        "filter": "python"
+    }
+]
