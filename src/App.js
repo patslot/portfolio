@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contacts from './pages/Contacts';
@@ -20,6 +20,12 @@ function App() {
                     path={ `${ process.env.PUBLIC_URL + "/" }` }
                     component={ Home }
                 />
+                <Route
+                    exact
+                    path={ `${ process.env.PUBLIC_URL + "/index.html" }` }
+                >
+                    <Redirect to="/" />
+                </Route>
                 <Route
                     exact
                     path={ `${ process.env.PUBLIC_URL + "/about" }` }

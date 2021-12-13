@@ -9,9 +9,9 @@ const WorkinSideData = [
     idea: `Site was builed by Gatsby JS. We didn't build a CMS for the site because it was only live for around 2 weeks andit won't be updated after the CNY.`,
     features: ["MDX files", "Site work on static server"],
     images: [
-      "/cny2021/index.png",
-      "/cny2021/transation.png",
-      "/cny2021/content.png",
+      "cny2021/index.png",
+      "cny2021/transation.png",
+      "cny2021/content.png",
     ],
     imageswidth: "landscape",
   },
@@ -33,7 +33,7 @@ const WorkinSideData = [
       "Backend was used google cloud app engine by python",
       "Frontend was wrote by Angular JS",
     ],
-    images: ["/bluecny/bluecny1.jpg"],
+    images: ["bluecny/bluecny1.jpg"],
     imageswidth: "portrait",
   },
   {
@@ -54,7 +54,7 @@ const WorkinSideData = [
       "Backend was used google cloud app engine by python",
       "Frontend was wrote by Angular JS",
     ],
-    images: ["/cigna/1.jpg","/cigna/2.jpg","/cigna/3.jpg"],
+    images: ["cigna/1.jpg","cigna/2.jpg","cigna/3.jpg"],
     imageswidth: "portrait",
   },
   {
@@ -67,7 +67,7 @@ const WorkinSideData = [
       "HTML animate in each pages",
       "Node Js & EJS template",
     ],
-    images: ["/bestmall/1.jpg","/bestmall/2.jpg","/bestmall/3.jpg","/bestmall/4.jpg"],
+    images: ["bestmall/1.jpg","bestmall/2.jpg","bestmall/3.jpg","bestmall/4.jpg"],
     imageswidth: "landscape",
   },
   {
@@ -79,7 +79,7 @@ const WorkinSideData = [
     features: [
       "Frontend was wrote by Angular JS"
     ],
-    images: ["/eatgoodsite/1.jpg","/eatgoodsite/2.jpg"],
+    images: ["eatgoodsite/1.jpg","eatgoodsite/2.jpg"],
     imageswidth: "landscape",
   },
   {
@@ -92,7 +92,7 @@ const WorkinSideData = [
       "Vanilla JavaScript",
       "Python backend",
     ],
-    images: ["/keewah/1.jpg","/keewah/2.jpg","/keewah/3.jpg","/keewah/4.jpg"],
+    images: ["keewah/1.jpg","keewah/2.jpg","keewah/3.jpg","keewah/4.jpg"],
     imageswidth: "portrait",
   },
   {
@@ -104,7 +104,7 @@ const WorkinSideData = [
     features: [
       "Vanilla JavaScript",
     ],
-    images: ["/chowsangsang/1.jpg","/chowsangsang/2.jpg","/chowsangsang/3.jpg","/chowsangsang/4.jpg"],
+    images: ["chowsangsang/1.jpg","chowsangsang/2.jpg","chowsangsang/3.jpg","chowsangsang/4.jpg"],
     imageswidth: "portrait",
   },
   {
@@ -117,7 +117,7 @@ const WorkinSideData = [
       "Backend was used google cloud app engine by python",
       "Frontend was wrote by Angular JS",
     ],
-    images: ["/sunlife/1.jpg","/sunlife/2.jpg","/sunlife/3.jpg","/sunlife/4.jpg","/sunlife/5.jpg"],
+    images: ["sunlife/1.jpg","sunlife/2.jpg","sunlife/3.jpg","sunlife/4.jpg","sunlife/5.jpg"],
     imageswidth: "portrait",
   },
 
@@ -131,7 +131,7 @@ const WorkinSideData = [
       "Backend was used google cloud app engine by python",
       "Frontend was wrote by Angular JS",
     ],
-    images: ["/roadshow/1.jpg","/roadshow/2.jpg","/roadshow/3.jpg","/roadshow/4.jpg"],
+    images: ["roadshow/1.jpg","roadshow/2.jpg","roadshow/3.jpg","roadshow/4.jpg"],
     imageswidth: "portrait",
   },
   

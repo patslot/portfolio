@@ -34,6 +34,7 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
+        "deploy": "aws s3 sync build/ s3://hker.link --acl public-read",
         "eject": "react-scripts eject"
     },
     "eslintConfig": {
@@ -56,5 +57,5 @@
     "devDependencies": {
         "node-sass": "^4.13.0"
     },
-    "homepage": "https://store.adveits.com/project/oxer/react-js/demo"
+    "homepage": "http://hker.link/"
 }

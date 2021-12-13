@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link }from 'react-router-dom';
 import Isotope from 'isotope-layout';
 import ImagesLoaded from 'imagesloaded';
 import PropTypes from 'prop-types';
@@ -75,7 +76,7 @@ class Gallery extends Component {
                         { this.state.list.map( ( item, key ) => (
                             <React.Fragment key={ key }>
                                 <li>
-                                    <a href="#my-works"
+                                    <Link to="#my-works"
                                        title={ item.title }
                                        className={ "btn btn-link transform-scale-h click" + ( key === this.state.selected ? ' active' : '' ) }
                                        data-filter={ item.filter }
@@ -84,7 +85,7 @@ class Gallery extends Component {
                                            this.handleClick( key, event )
                                        } }>
                                         { item.title }
-                                    </a>
+                                    </Link>
                                 </li>
 
                                 { key !== listCount ?
@@ -101,7 +102,7 @@ class Gallery extends Component {
                     <div className="gallery-items" ref={ ( c ) => this.grid = c }>
                         { GalleryItemsData && GalleryItemsData.map( ( item, key ) => {
                             return (
-                                <a key={ key } title={ item.title } className={ "gallery-item active " + item.category } href={ process.env.PUBLIC_URL + item.link }>
+                                <Link key={ key } title={ item.title } className={ "gallery-item active " + item.category } to={ process.env.PUBLIC_URL + item.link }>
                                     <div className="img object-fit">
                                         <div className="object-fit-cover">
                                             <img src={ item.imgLink } alt={ item.title } />
@@ -118,7 +119,7 @@ class Gallery extends Component {
                                             </span>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
                             );
                         } ) }
                     </div>
@@ -126,7 +127,7 @@ class Gallery extends Component {
 
                 { this.props.seeMore ?
                     <div className="text-center no-space">
-                        <a title="See more" className="btn btn-link border-0 p-0 transform-scale-h" href={ process.env.PUBLIC_URL + "/works" }>See more<i className="icon-c icon-arrow-right" /></a>
+                        <Link title="See more" className="btn btn-link border-0 p-0 transform-scale-h" to={ process.env.PUBLIC_URL + "/works" }>See more<i className="icon-c icon-arrow-right" /></Link>
                     </div>
                     : ""
                 }
