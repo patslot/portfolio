@@ -1,5 +1,6 @@
-const CONTENTFUL_ENDPOINT =
-  'https://graphql.contentful.com/content/v1/spaces/s540uhysl356/';
+const CONTENTFUL_ENDPOINT = process.env.CONTENTFUL_ENDPOINT;
+
+const CONTENTFUL_TOKEN = process.env.CONTENTFUL_TOKEN;
 
 export async function getAllPosts() {
   const query = `
@@ -27,7 +28,7 @@ export async function getAllPosts() {
     headers: {
       'Content-Type': 'application/json',
       // Authenticate the request
-      Authorization: 'Bearer 4u1CJtamdXVhjkxZtS0o5Bdct67hy_gkipc8pWfN0-o',
+      Authorization: CONTENTFUL_TOKEN,
     },
     // send the GraphQL query
     body: JSON.stringify({ query }),
