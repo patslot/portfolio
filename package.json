@@ -54,8 +54,8 @@
             "ie 10"
         ]
     },
+    "homepage": "http://hker.link/",
     "devDependencies": {
-        "node-sass": "^4.13.0"
-    },
-    "homepage": "http://hker.link/"
+        "sass": "^1.49.7"
+    }
 }

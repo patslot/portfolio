@@ -7,7 +7,7 @@ import Footer from '../blocks/footer/Footer';
 
 import PageTitleHome from '../blocks/page-title/PageTitleHome';
 import Works from '../blocks/works/Works';
-// import Journal from '../blocks/blog/Blog';
+import Journal from '../blocks/blog/Blog';
 import Contacts from '../blocks/contacts/Contacts';
 
 const Home = () => {
@@ -42,7 +42,7 @@ const Home = () => {
 
                 <Contacts />
 
-                {/* <Journal /> */}
+                <Journal />
             </main>
 
             <Footer />

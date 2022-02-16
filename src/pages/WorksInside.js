@@ -1,19 +1,19 @@
-import React, { Fragment } from "react";
+import React, { Fragment } from 'react';
 import { useParams } from 'react-router-dom';
-import MetaTags from "react-meta-tags";
+import MetaTags from 'react-meta-tags';
 
-import Loading from "../blocks/loading/Loading";
-import Header from "../blocks/header/Header";
-import Footer from "../blocks/footer/Footer";
+import Loading from '../blocks/loading/Loading';
+import Header from '../blocks/header/Header';
+import Footer from '../blocks/footer/Footer';
 
-import WorkInside from "../blocks/workinside/WorkInside";
+import WorkInside from '../blocks/workinside/WorkInside';
 
 const WorksInside = () => {
   const param = useParams();
-  document.body.classList.add("single");
-  document.body.classList.add("single-portfolio");
-  document.body.classList.add("bg-fixed");
-  document.body.classList.add("bg-line");
+  document.body.classList.add('single');
+  document.body.classList.add('single-portfolio');
+  document.body.classList.add('bg-fixed');
+  document.body.classList.add('bg-line');
   return (
     <Fragment>
       <MetaTags>
