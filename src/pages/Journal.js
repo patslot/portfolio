@@ -1,4 +1,8 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
+
+import useHttp from '../hook/useHttp';
+import { getAllPosts } from '../lib/api';
+
 import MetaTags from 'react-meta-tags';
 
 import Loading from '../blocks/loading/Loading';
@@ -14,6 +18,29 @@ const Journal = () => {
   document.body.classList.add('blog');
   document.body.classList.add('bg-fixed');
   document.body.classList.add('bg-line');
+  const {
+    sendRequest,
+    status,
+    data: loadedPosts,
+    error,
+  } = useHttp(getAllPosts, true);
+
+  useEffect(() => {
+    sendRequest();
+  }, [sendRequest]);
+  if (status === 'pending') {
+    return <div>pending</div>;
+  }
+
+  if (error) {
+    return <p>{error}</p>;
+  }
+
+  if (status === 'completed' && (!loadedPosts || loadedPosts.length === 0)) {
+    return <p> No post </p>;
+  }
+  const allPost = loadedPosts.data.blogPostCollection.items;
+  console.log(allPost);
 
   return (
     <Fragment>
@@ -45,7 +72,7 @@ const Journal = () => {
                 <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12">
                   <div className="row gutter-width-lg with-pb-lg">
                     {JournalItemsData &&
-                      JournalItemsData.map((item, key) => {
+                      allPost.map((item, key) => {
                         return (
                           <div
                             key={key}
@@ -61,13 +88,13 @@ const Journal = () => {
                                     <div className="object-fit-cover transform-scale-h">
                                       <img
                                         className="card-top-img"
-                                        src={item.imgLink}
-                                        alt={item.imgAlt}
+                                        src={item.heroImage.url}
+                                        alt={item.heroImage.description}
                                       />
                                     </div>
                                   </div>
                                 </a>
-
+                                {/* 
                                 <div className="card-category">
                                   <a
                                     title={item.categoryTitle}
@@ -78,7 +105,7 @@ const Journal = () => {
                                   >
                                     {item.categoryTitle}
                                   </a>
-                                </div>
+                                </div> */}
                               </div>
 
                               <div className="card-body border">

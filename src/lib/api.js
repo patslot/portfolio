@@ -1,7 +1,5 @@
-const CONTENTFUL_ENDPOINT = process.env.CONTENTFUL_ENDPOINT;
-
-const CONTENTFUL_TOKEN = process.env.CONTENTFUL_TOKEN;
-
+const CONTENTFUL_ENDPOINT = process.env.REACT_APP_CONTENTFUL_ENDPOINT;
+const CONTENTFUL_TOKEN = process.env.REACT_APP_CONTENTFUL_TOKEN;
 export async function getAllPosts() {
   const query = `
     {

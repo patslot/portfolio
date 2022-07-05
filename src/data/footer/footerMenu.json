@@ -1,22 +1,12 @@
 [
-    {
-        "id": "1",
-        "title": "Facebook",
-        "link": "https://www.facebook.com/adveits/"
-    },
-    {
-        "id": "2",
-        "title": "Instagram",
-        "link": "https://www.instagram.com/adveits/"
-    },
-    {
-        "id": "3",
-        "title": "Twitter",
-        "link": "https://www.twitter.com/adveits/"
-    },
-    {
-        "id": "4",
-        "title": "Behance",
-        "link": "https://www.behance.net/adveits/"
-    }
+  {
+    "id": "1",
+    "title": "Github",
+    "link": "https://github.com/patslot/"
+  },
+  {
+    "id": "2",
+    "title": "Linkedin",
+    "link": "https://www.linkedin.com/in/pat-kwok-b03154104/"
+  }
 ]

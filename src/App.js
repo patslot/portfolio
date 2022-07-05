@@ -9,12 +9,15 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contacts from './pages/Contacts';
 import Journal from './pages/Journal';
+import Blog from './pages/Blog';
 import JournalSinglePost from './pages/JournalSinglePost';
 import SearchResults from './pages/SearchResults';
 import Works from './pages/Works';
 import WorksInside from './pages/WorksInside';
 import page404 from './pages/404';
 import UserInterface from './pages/UserInterface';
+
+import ArticleBlockLayout from './pages/ArticleBlockLayout';
 
 function App() {
   return (
@@ -55,6 +58,11 @@ function App() {
         />
         <Route
           exact
+          path={`${process.env.PUBLIC_URL + '/blog'}`}
+          component={Blog}
+        />
+        <Route
+          exact
           path={`${process.env.PUBLIC_URL + '/search-results'}`}
           component={SearchResults}
         />
@@ -73,7 +81,11 @@ function App() {
           path={`${process.env.PUBLIC_URL + '/works-inside/:workId'}`}
           component={WorksInside}
         />
-
+        <Route
+          exact
+          path={`${process.env.PUBLIC_URL + '/articlelayout'}`}
+          component={ArticleBlockLayout}
+        />
         <Route exact component={page404} />
       </Switch>
     </Router>
